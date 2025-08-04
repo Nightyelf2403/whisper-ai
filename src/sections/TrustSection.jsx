@@ -6,13 +6,13 @@ export default function TrustSection() {
   return (
     <section className="px-6 lg:px-24 py-20 bg-white">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-        {/* Left Image with background shape */}
+        {/* Left Image with pink rounded background */}
         <div className="relative w-full lg:w-[40%] flex justify-center">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] h-[400px] bg-[#f4b8b8] rounded-[80px] -z-10"></div>
           <img
-            src="/girl-phone.png"
+            src={`${import.meta.env.BASE_URL}girl-phone.png`}
             alt="Smiling woman using phone"
-            className="w-[300px] h-[400px] object-cover rounded-[40px] z-10"
+            className="w-[300px] h-[400px] object-cover rounded-[40px] z-10 shadow-xl"
           />
         </div>
 
