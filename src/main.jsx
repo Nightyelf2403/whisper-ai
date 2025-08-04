@@ -5,10 +5,9 @@ import './index.css'
 import App from './App'
 import ChatPage from './pages/ChatPage'
 
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/whisper-ai">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/chat" element={<ChatPage />} />
@@ -16,5 +15,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   </React.StrictMode>
 )
-
-
