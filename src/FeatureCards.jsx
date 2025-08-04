@@ -21,7 +21,7 @@ export default function FeatureCards() {
     {
       title: 'Designed for Women',
       desc: 'Built with understanding of women’s communication styles and emotional needs.',
-      icon: '👩‍🧠',
+      icon: '👩‍🦰',
       color: 'hover:bg-[#fef3f3]',
     },
   ]
