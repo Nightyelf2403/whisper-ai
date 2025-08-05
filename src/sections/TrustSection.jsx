@@ -1,20 +1,28 @@
 import { useNavigate } from 'react-router-dom'
+import { ShieldCheck, Sparkles, Clock } from 'lucide-react'
 
 export default function TrustSection() {
   const navigate = useNavigate()
 
   return (
     <section className="px-6 lg:px-24 py-20 bg-white">
-  <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-    {/* Left Image with background shape */}
-    <div className="relative w-full lg:w-[40%] flex justify-center">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] h-[400px] bg-[#f4b8b8] rounded-[80px] -z-10"></div>
-      <img
-        src={`${import.meta.env.BASE_URL}girl-phone.webp`}
-        alt="Smiling woman using phone"
-        className="w-[300px] h-[400px] object-cover rounded-[40px] z-10"
-      />
-    </div>
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+        {/* Left Image with background shape */}
+<div className="relative w-full lg:w-[40%] flex justify-center">
+  {/* Background shape with rounded corner */}
+  <div className="relative w-[280px] h-[400px] bg-[#f4b8b8] rounded-[100px_0_100px_0] z-0">
+    {/* Floating dots */}
+    <span className="absolute bottom-[-12px] left-[-10px] w-2.5 h-2.5 bg-[#f4b8b8] rounded-full" />
+    <span className="absolute top-[60%] right-[-12px] w-4 h-4 bg-[#f4b8b8] rounded-full" />
+
+    {/* Girl image positioned inside shape */}
+    <img
+      src={`${import.meta.env.BASE_URL}girl-phone.webp`}
+      alt="Smiling woman using phone"
+      className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[280px] h-[400px] object-cover rounded-[40px] z-10"
+    />
+  </div>
+</div>
 
         {/* Right Text */}
         <div className="w-full lg:w-[60%] text-center lg:text-left">
