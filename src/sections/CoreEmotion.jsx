@@ -20,13 +20,13 @@ export default function CoreEmotion() {
 
         {/* Right Image */}
         <div className="w-full md:w-1/2 relative">
-          <img
-            src="/hand-stop.png"
-            alt="Woman hand stop"
-            className="rounded-[40px] object-cover w-full max-w-sm"
-          />
-          <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-[#f3c4cb33] -z-10" />
-        </div>
+  <img
+    src={`${import.meta.env.BASE_URL}girl-stop.webp`}
+    alt="Woman hand stop"
+    className="rounded-[40px] object-cover w-full max-w-sm"
+  />
+  <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-[#f3c4cb33] -z-10" />
+</div>
       </div>
 
       {/* Bottom CTA */}
