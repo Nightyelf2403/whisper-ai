@@ -1,22 +1,22 @@
 export default function FeatureCards() {
   const features = [
     {
-      icon: '/icons/heart.svg', // Place in public/icons folder
+      icon: `${import.meta.env.BASE_URL}icons/heart.png`,
       title: 'Emotional Intelligence',
       desc: 'Understands nuanced emotions and responds with genuine empathy and care.',
     },
     {
-      icon: '/icons/brain.svg',
+      icon: `${import.meta.env.BASE_URL}icons/brain.png`,
       title: 'Thoughtful Responses',
       desc: 'Processes conversations with depth, considering context and emotional state.',
     },
     {
-      icon: '/icons/shield.svg',
+      icon: `${import.meta.env.BASE_URL}icons/shield.png`,
       title: 'Safe & Secure',
       desc: 'Your conversations are private, encrypted, and never shared or stored.',
     },
     {
-      icon: '/icons/women.svg',
+      icon: `${import.meta.env.BASE_URL}icons/women.png`,
       title: 'Designed for Women',
       desc: "Built with understanding of women's communication styles and emotional needs.",
     },
@@ -33,10 +33,14 @@ export default function FeatureCards() {
           {features.map((item, index) => (
             <div
               key={index}
-              className="border border-[#ecdede] p-8 rounded-tl-[2rem] rounded-br-[6rem] text-center md:text-left"
+              className="group border border-[#ecdede] p-8 rounded-tl-[2rem] rounded-br-[6rem] text-center md:text-left transition-all duration-300 hover:bg-[#e79595]"
             >
-              <div className="w-12 h-12 rounded-full border border-[#d4b2a2] mx-auto md:mx-0 flex items-center justify-center mb-6">
-                <img src={item.icon} alt={item.title} className="w-6 h-6" />
+              <div className="w-14 h-14 rounded-full border border-[#d4b2a2] bg-white mx-auto md:mx-0 flex items-center justify-center mb-6 transition-colors duration-200 group-hover:border-white">
+                <img
+                  src={item.icon}
+                  alt={item.title}
+                  className="w-10 h-10"
+                />
               </div>
               <h3 className="text-xl font-semibold text-[#1c1c1c] mb-3">{item.title}</h3>
               <p className="text-[16px] leading-relaxed text-[#443e3e]">{item.desc}</p>
