@@ -1,19 +1,17 @@
-import { useState } from 'react'
 import logo from '/public/logo.png'
 
-export default function Navbar() {
-  const [hovered, setHovered] = useState(false)
-
+export default function Navbar({ onLoginClick }) {
   return (
     <header className="w-full px-6 py-4 flex items-center justify-between border-b border-gray-200">
-      {/* Left Logo Text */}
+      {/* Left Logo */}
       <div className="flex items-center space-x-2">
   <img
-    src="/logo.webp" 
-    alt="Whisper Ai logo"
+    src="/Logo.webp"
+    alt="Whisper AI logo"
     className="h-10 w-auto object-contain drop-shadow-md"
   />
 </div>
+
 
       {/* Center Nav Links */}
       <nav className="hidden md:flex items-center space-x-8 text-[15px] text-[#5c4140] font-light">
@@ -33,12 +31,16 @@ export default function Navbar() {
         >
           Safe Exit
         </button>
-        <a
-          href="#"
-          className="ml-3 text-[#ba6d65] hover:text-[#a15048] text-sm font-medium"
-        >
-          Login
-        </a>
+        <button
+  onClick={() => {
+    console.log("Login button clicked!");
+    onLoginClick();
+  }}
+  className="ml-3 text-[#ba6d65] hover:text-[#a15048] text-sm font-medium"
+>
+  Login
+</button>
+
       </div>
     </header>
   )
