@@ -8,10 +8,12 @@ export default function Navbar() {
     <header className="w-full px-6 py-4 flex items-center justify-between border-b border-gray-200">
       {/* Left Logo Text */}
       <div className="flex items-center space-x-2">
-        <h2 className="text-3xl font-['Great_Vibes'] text-[#2e1a1a] mb-0 drop-shadow-md">
-          Whisper Ai
-        </h2>
-      </div>
+  <img
+    src="/logo.webp" 
+    alt="Whisper Ai logo"
+    className="h-10 w-auto object-contain drop-shadow-md"
+  />
+</div>
 
       {/* Center Nav Links */}
       <nav className="hidden md:flex items-center space-x-8 text-[15px] text-[#5c4140] font-light">
