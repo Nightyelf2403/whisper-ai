@@ -1,4 +1,4 @@
-import Navbar from './sections/Navbar'
+import Navbar from './components/Navbar'
 import HeroSection from './sections/HeroSection'
 import WhisperInput from './sections/WhisperInput'
 import SafePopup from './sections/SafePopup'
